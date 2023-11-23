@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="detailVM" type="com.xjtusports.app.modules.detail.data.viewmodel.DetailVM"/>
+    </data>
+    <LinearLayout android:gravity="start" android:id="@+id/linearDetail"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStyle">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnyoursemesterp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:id="@+id/txtYoursemesterp"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:text="@{detailVM.detailModel.txtYoursemesterp}"
+                style="@style/txtRubikOneregular24" tools:text="@string/msg_your_semester_p2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumngeneral"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerDetail"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_23pxh}" tools:itemCount="3" tools:listitem="@layout/row_detail"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

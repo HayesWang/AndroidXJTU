@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="exploreVM" type="com.xjtusports.app.modules.explore.data.viewmodel.ExploreVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearExplore"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnfreeexercise"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <HorizontalScrollView android:fillViewport="true"
+                android:id="@+id/horizontalScrollHorizontalscrollfreeexercise"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:scrollbars="none">
+                <LinearLayout android:id="@+id/linearShortcut"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal" style="@style/groupStylecornerRadius_1">
+                    <FrameLayout
+                        android:id="@+id/frameStackfreeexercise"
+                        android:layout_height="@dimen/_41pxv"
+                        android:layout_width="@dimen/_143pxh" style="@style/groupStylecornerRadius_1">
+                        <TextView android:ellipsize="end"
+                            android:gravity="top|start"
+                            android:id="@+id/txtFreeexercise"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{exploreVM.exploreModel.txtFreeexercise}"
+                            style="@style/txtRubikromanbold16" tools:text="@string/lbl_free_exercise"/>
+                        <ImageView
+                            android:id="@+id/imageFreeexerciseOne"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_41pxh"
+                            android:layout_width="@dimen/_143pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_freeexercise"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_freeexercise"/>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/frameStacksignin"
+                        android:layout_height="@dimen/_41pxv"
+                        android:layout_width="@dimen/_143pxh" style="@style/groupStylecornerRadius_1">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtSignIn"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{exploreVM.exploreModel.txtSignIn}"
+                            style="@style/txtRubikromanbold16" tools:text="@string/lbl_sign_in"/>
+                        <ImageView android:id="@+id/imageSigninOne"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_41pxh"
+                            android:layout_width="@dimen/_143pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_signin"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_signin"/>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/frameStackadvice"
+                        android:layout_height="@dimen/_41pxv"
+                        android:layout_width="@dimen/_143pxh" style="@style/groupStylecornerRadius_1">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtAdvice"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:singleLine="true"
+                            android:text="@{exploreVM.exploreModel.txtAdvice}"
+                            style="@style/txtRubikromanbold16" tools:text="@string/lbl_advice"/>
+                        <ImageView android:id="@+id/imageAdviceOne"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_41pxh"
+                            android:layout_width="@dimen/_143pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_advice_2"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_advice_2"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearColumnhome"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical"/>
+    </LinearLayout>
+</layout>

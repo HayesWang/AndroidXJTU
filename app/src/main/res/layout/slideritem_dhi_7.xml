@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <FrameLayout android:id="@+id/frameStackstart"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearColumn"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnstart"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylegray_50cornerRadius">
+                <TextView android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/txtStart"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@string/lbl_start"
+                    style="@style/txtRubikitalicbold16" tools:text="@string/lbl_start"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/image33878"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_205pxh"
+            android:layout_width="@dimen/_205pxh"
+            android:scaleType="fitXY" imageRes="@{@drawable/img_33878}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_33878"/>
+        <TextView android:id="@+id/txtNewExercise"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:text="@string/lbl_new_exercise"
+            style="@style/txtRubikitalicsemibold36" tools:text="@string/lbl_new_exercise"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtContent"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:singleLine="true" android:text="@string/lbl_content"
+            style="@style/txtRubikromanbold15" tools:text="@string/lbl_content"/>
+    </FrameLayout>
+</layout>
