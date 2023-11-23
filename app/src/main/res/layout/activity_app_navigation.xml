@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="appNavigationVM" type="com.xjtusports.app.modules.appnavigation.data.viewmodel.AppNavigationVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroupAP13"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearAppNavigation"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtAppNavigation"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{appNavigationVM.appNavigationModel.txtAppNavigation}"
+                style="@style/txtregular20" tools:text="@string/lbl_app_navigation"/>
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtCheckYourAppsUIFromTheBelowDemoScreensOfYourApp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{appNavigationVM.appNavigationModel.txtCheckYourAppsUIFromTheBelowDemoScreensOfYourApp}"
+                style="@style/txtregular16" tools:text="@string/msg_check_your_app"/>
+            <View android:background="@color/black_900"
+                android:id="@+id/lineLine2"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_1pxv"
+                android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+        </LinearLayout>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:gravity="center_horizontal"
+            android:id="@+id/scrollViewGroupAP12"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearGroupAP11"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylewhite_A700">
+                <LinearLayout android:id="@+id/linear"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start" android:id="@+id/txt"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txt}"
+                        style="@style/txtregular20" tools:text="@string/lbl"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine3"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start" android:id="@+id/txt4"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txt4}"
+                        style="@style/txtregular20" tools:text="@string/lbl_42"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine4"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start" android:id="@+id/txt3"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txt3}"
+                        style="@style/txtregular20" tools:text="@string/lbl_32"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine5"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start" android:id="@+id/txt2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txt2}"
+                        style="@style/txtregular20" tools:text="@string/lbl_210"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine6"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear5"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start" android:id="@+id/txt5"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txt5}"
+                        style="@style/txtregular20" tools:text="@string/lbl_211"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine7"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear6"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start" android:id="@+id/txt6"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txt6}"
+                        style="@style/txtregular20" tools:text="@string/lbl_33"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine8"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearInfo"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtInfo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtInfo}"
+                        style="@style/txtregular20" tools:text="@string/lbl_info"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine9"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearDetail"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtDetail"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtDetail}"
+                        style="@style/txtregular20" tools:text="@string/lbl_detail"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine10"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearFreeExercise"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtFreeExercise"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtFreeExercise}"
+                        style="@style/txtregular20" tools:text="@string/lbl_free_exercise3"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine11"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearPEClasses"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtPEClasses"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtPEClasses}"
+                        style="@style/txtregular20" tools:text="@string/lbl_pe_classes2"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine12"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start" android:id="@+id/txt1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txt1}"
+                        style="@style/txtregular20" tools:text="@string/lbl2"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine13"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear7"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start" android:id="@+id/txt7"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txt7}"
+                        style="@style/txtregular20" tools:text="@string/lbl3"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine14"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linear8"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start" android:id="@+id/txt8"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txt8}"
+                        style="@style/txtregular20" tools:text="@string/lbl4"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine15"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearContainer"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylewhite_A700">
+                    <TextView android:ellipsize="end"
+                        android:gravity="start"
+                        android:id="@+id/txtContainer"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_20pxh"
+                        android:layout_marginStart="@dimen/_20pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{appNavigationVM.appNavigationModel.txtContainer}"
+                        style="@style/txtregular20" tools:text="@string/lbl_container"/>
+                    <View android:background="@color/bluegray_400"
+                        android:id="@+id/lineLine16"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="@dimen/_1pxv"
+                        android:layout_marginTop="@dimen/_5pxv" android:layout_width="@dimen/_375pxh"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

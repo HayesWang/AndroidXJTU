@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderSliderstartModel" type="com.xjtusports.app.modules.dhi0.data.model.ImageSliderSliderstartModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackstart"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearColumnstart"
+            android:layout_gravity="bottom|start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnStart"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_5pxv"
+                android:paddingEnd="@dimen/_28pxh"
+                android:paddingStart="@dimen/_27pxh"
+                android:paddingTop="@dimen/_5pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_start"
+                android:textAllCaps="false"
+                style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_start"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/image33878"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_205pxh"
+            android:layout_width="@dimen/_205pxh"
+            android:scaleType="fitXY"
+            imageUrl="@{imageSliderSliderstartModel.image33878}"
+            placeHolder="@{@drawable/image_not_found}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_33878"/>
+        <TextView android:id="@+id/txtNewExercise"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_1pxh"
+            android:text="@{imageSliderSliderstartModel.txtNewExercise}"
+            style="@style/txtRubikitalicsemibold36" tools:text="@string/lbl_new_exercise"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtContent"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{imageSliderSliderstartModel.txtContent}"
+            style="@style/txtRubikromanbold15" tools:text="@string/lbl_content"/>
+    </FrameLayout>
+</layout>

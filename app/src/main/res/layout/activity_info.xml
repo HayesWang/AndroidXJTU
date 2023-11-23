@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="infoVM" type="com.xjtusports.app.modules.info.data.viewmodel.InfoVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameInfo"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <View
+            android:background="@drawable/rectangle_bg_gray_500_radius_20_5"
+            android:id="@+id/viewRectangleThirteen"
+            android:layout_gravity="bottom|center"
+            android:layout_height="@dimen/_41pxv" android:layout_width="@dimen/_353pxh"/>
+        <LinearLayout android:id="@+id/linearRowhome"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/imageHome"
+                android:layout_height="@dimen/_22pxh"
+                android:layout_width="@dimen/_25pxh"
+                android:scaleType="centerCrop" circular="@{true}"
+                imageRes="@{@drawable/img_home}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_home"/>
+            <ImageView android:id="@+id/imageExplore"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_width="@dimen/_24pxh"
+                android:scaleType="centerCrop" circular="@{true}"
+                imageRes="@{@drawable/img_explore}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_explore"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_indigo_a402_radius_17"
+                android:drawablePadding="@dimen/_10pxh"
+                android:ellipsize="end" android:hint="@string/lbl_info"
+                android:id="@+id/etInfo" android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:paddingBottom="@dimen/_5pxv"
+                android:paddingEnd="@dimen/_10pxh"
+                android:paddingStart="@dimen/_10pxh"
+                android:paddingTop="@dimen/_4pxv"
+                android:singleLine="true"
+                android:text="@={infoVM.infoModel.etInfoValue}"
+                android:textColorHint="@color/white_A700"
+                style="@style/etSolidRounded_1" tools:ignore="Autofill"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">Xjtusports</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_feb">Feb</string>
+<string name="lbl_xjtu">XJTU</string>
+<string name="lbl_20">20</string>
+<string name="lbl_23">23</string>
+<string name="lbl_24">24</string>
+<string name="lbl_21">21</string>
+<string name="lbl_22">22</string>
+<string name="lbl_10_20">10/20</string>
+<string name="lbl_27">27</string>
+<string name="lbl4">上课签到成功</string>
+<string name="lbl_28">28</string>
+<string name="msg_sign_in_for_tod">Sign in for Today\u2019s Lesson</string>
+<string name="lbl_25">25</string>
+<string name="lbl2">上课签到</string>
+<string name="lbl_26">26</string>
+<string name="lbl3">上课签到加载</string>
+<string name="lbl_home">Home</string>
+<string name="lbl_free_exercise2">Free Exercise</string>
+<string name="lbl_pe_classes2">PE Classes</string>
+<string name="lbl_free_exercise3">free exercise</string>
+<string name="lbl_preset_route">Preset Route</string>
+<string name="lbl_29">29</string>
+<string name="lbl_app_navigation">App Navigation</string>
+<string name="lbl_pe_classes">PE
+Classes</string>
+<string name="lbl_general">General</string>
+<string name="lbl_sign_in">Sign In</string>
+<string name="msg_your_semester_p2">Your semester progress</string>
+<string name="msg_follow_certain">Follow certain route at 2km</string>
+<string name="lbl_12">12</string>
+<string name="lbl_13">13</string>
+<string name="lbl_10">10</string>
+<string name="lbl_11">11</string>
+<string name="lbl_sign_up">Sign Up</string>
+<string name="lbl_16">16</string>
+<string name="lbl_17">17</string>
+<string name="lbl_14">14</string>
+<string name="lbl_15">15</string>
+<string name="lbl_5_20">  5/20</string>
+<string name="lbl_211">主页2</string>
+<string name="lbl_210">登陆2</string>
+<string name="lbl_18">18</string>
+<string name="lbl_19">19</string>
+<string name="lbl_event_raffle">Event
+Raffle</string>
+<string name="lbl_15_40">15/40</string>
+<string name="msg_building_3_6th">Building 3
+6th Floor</string>
+<string name="lbl">登陆</string>
+<string name="msg_your_semester_p">Your Semester Progress</string>
+<string name="msg_login_with_stud">Login with Student ID</string>
+<string name="lbl_catagory_a">Catagory A</string>
+<string name="lbl_container">主页 - Container</string>
+<string name="lbl_catagory_b">Catagory B</string>
+<string name="lbl_start">Start</string>
+<string name="lbl_42">登陆4</string>
+<string name="lbl_success">Success</string>
+<string name="lbl_1">1</string>
+<string name="lbl_2">2</string>
+<string name="lbl_3">3</string>
+<string name="lbl_agenda">Agenda</string>
+<string name="lbl_4">4</string>
+<string name="lbl_check">Check</string>
+<string name="lbl_5">5</string>
+<string name="lbl_6">6</string>
+<string name="lbl_content">Content</string>
+<string name="lbl_onhold_races">Onhold
+Races</string>
+<string name="lbl_info">Info</string>
+<string name="lbl_7">7</string>
+<string name="lbl_8">8</string>
+<string name="lbl_9">9</string>
+<string name="lbl_examine_grade">Examine
+Grade</string>
+<string name="lbl_shortcut">Shortcut</string>
+<string name="lbl_free_exercise">Free exercise</string>
+<string name="lbl_welcome">Welcome</string>
+<string name="lbl_daily_outfit">Daily
+Outfit</string>
+<string name="lbl_new_exercise">New 
+Exercise</string>
+<string name="lbl_30">30</string>
+<string name="msg_check_your_app">"Check your app's UI from the below demo screens of your app."</string>
+<string name="lbl_32">登陆3</string>
+<string name="lbl_33">主页3</string>
+<string name="lbl_welcome_to">Welcome to
+</string>
+<string name="lbl_peter_hanson">Peter Hanson</string>
+<string name="lbl_jan">Jan</string>
+<string name="lbl_explore">Explore</string>
+<string name="msg_exercise_freely">Exercise freely at 3km</string>
+<string name="lbl_advice">Advice</string>
+<string name="lbl_welcome_to_xjtu">Welcome to
+XJTU</string>
+<string name="lbl_yoga_workout">Yoga Workout</string>
+<string name="lbl_detail">Detail</string>
+</resources>

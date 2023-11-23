@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="dhi14VM" type="com.xjtusports.app.modules.dhi14.data.viewmodel.Dhi14VM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackgroupthirtythree"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <LinearLayout android:id="@+id/linearColumnvectorOne"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700">
+            <LinearLayout android:id="@+id/linearRowyogaworkout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <FrameLayout android:id="@+id/frameStackyogaworkout"
+                    android:layout_height="@dimen/_743pxv" android:layout_width="@dimen/_364pxh">
+                    <LinearLayout
+                        android:id="@+id/linearColumnyogaworkout"
+                        android:layout_gravity="bottom|center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtYogaWorkout"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_7pxh"
+                            android:singleLine="true"
+                            android:text="@{dhi14VM.dhi14Model.txtYogaWorkout}"
+                            style="@style/txtRubikromansemibold36" tools:text="@string/lbl_yoga_workout"/>
+                        <TextView android:id="@+id/txtBuilding36th"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="@{dhi14VM.dhi14Model.txtBuilding36th}"
+                            style="@style/txtRubikromansemibold24" tools:text="@string/msg_building_3_6th"/>
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:id="@+id/linearColumnone"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:orientation="vertical" style="@style/groupStylecornerRadius_3">
+                            <HorizontalScrollView
+                                android:fillViewport="true"
+                                android:gravity="start"
+                                android:id="@+id/horizontalScrollHorizontalscrollone"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent" android:scrollbars="none">
+                                <FrameLayout
+                                    android:id="@+id/frameStackone"
+                                    android:layout_height="@dimen/_171pxv"
+                                    android:layout_width="@dimen/_200pxh" style="@style/groupStylecornerRadius_4">
+                                    <ImageView
+                                    android:id="@+id/imageOne"
+                                    android:layout_gravity="bottom|start"
+                                    android:layout_height="@dimen/_627pxh"
+                                    android:layout_width="@dimen/_289pxh"
+                                    android:scaleType="fitXY"
+                                    imageRes="@{@drawable/img_1_627x289}"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_1_627x289"/>
+                                    <ImageView
+                                    android:id="@+id/imageVector"
+                                    android:layout_gravity="top|start"
+                                    android:layout_height="@dimen/_31pxh"
+                                    android:layout_width="@dimen/_18pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_vector_bluegray_101"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_bluegray_101"/>
+                                </FrameLayout>
+                            </HorizontalScrollView>
+                        </LinearLayout>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/btnSignUp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="@dimen/_47pxv"
+                            android:layout_width="@dimen/_150pxh"
+                            android:lineSpacingExtra="@dimen/_5pxh"
+                            android:paddingBottom="@dimen/_9pxv"
+                            android:paddingEnd="@dimen/_30pxh"
+                            android:paddingStart="@dimen/_30pxh"
+                            android:paddingTop="@dimen/_9pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_sign_up"
+                            android:textAllCaps="false"
+                            style="@style/btnSolidRoundedOutline_4" tools:text="@string/lbl_sign_up"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linearColumnsigninfortod"
+                        android:layout_gravity="top|center"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical" style="@style/groupStylered_300cornerRadius">
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtSigninforTod"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:lineSpacingExtra="@dimen/_3pxh"
+                            android:singleLine="true"
+                            android:text="@{dhi14VM.dhi14Model.txtSigninforTod}"
+                            style="@style/txtRubikromansemibold16" tools:text="@string/msg_sign_in_for_tod"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/imageVectorOne"
+                        android:layout_gravity="top|start"
+                        android:layout_height="@dimen/_42pxh"
+                        android:layout_width="@dimen/_42pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_vector_gray_700"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_vector_gray_700"/>
+                    <ImageView android:id="@+id/imageOneOne"
+                        android:layout_gravity="top|center"
+                        android:layout_height="@dimen/_254pxh"
+                        android:layout_width="@dimen/_254pxh"
+                        android:scaleType="fitXY"
+                        imageRes="@{@drawable/img_1_254x254}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_1_254x254"/>
+                </FrameLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_width="0dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    itemSpace="@{@dimen/_45pxh}" tools:itemCount="2" tools:listitem="@layout/row_dhi_0"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowhome"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStylegray_500cornerRadius">
+                <EditText
+                    android:background="@drawable/rectangle_bg_indigo_a402_radius_16"
+                    android:drawablePadding="@dimen/_10pxh"
+                    android:ellipsize="end"
+                    android:hint="@string/lbl_home"
+                    android:id="@+id/etHome" android:inputType="text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_5pxv"
+                    android:paddingEnd="@dimen/_10pxh"
+                    android:paddingStart="@dimen/_10pxh"
+                    android:paddingTop="@dimen/_5pxv"
+                    android:singleLine="true"
+                    android:text="@={dhi14VM.dhi14Model.etHomeValue}"
+                    android:textColorHint="@color/white_A700"
+                    style="@style/etSolidRounded" tools:ignore="Autofill"/>
+                <ImageView android:id="@+id/imageExplore"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_width="@dimen/_24pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_explore}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_explore"/>
+                <ImageView android:id="@+id/imageInfo"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_width="@dimen/_24pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_info_white_a700}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_info_white_a700"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

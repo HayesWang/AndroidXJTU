@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="detailRowModel" type="com.xjtusports.app.modules.detail.data.model.DetailRowModel"/>
+    </data>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumncatagorya"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylecornerRadius_2">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearRowcatagorya"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtCatagoryA"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{detailRowModel.txtCatagoryA}"
+                style="@style/txtRubikOneregular17" tools:text="@string/lbl_catagory_a"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt1020"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{detailRowModel.txt1020}"
+                style="@style/txtRubikOneregular17_1" tools:text="@string/lbl_10_20"/>
+        </LinearLayout>
+        <View
+            android:background="@drawable/rectangle_gradient_s_yellow_a400_c_lime_300_e_white_a700_f9_radius_4"
+            android:id="@+id/viewRectangleEight"
+            android:layout_height="@dimen/_8pxv" android:layout_width="@dimen/_278pxh"/>
+    </LinearLayout>
+</layout>

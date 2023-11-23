@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.xjtusports.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.xjtusports.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.xjtusports.app.modules.freeexercise.ui.FreeExerciseActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xjtusports.app.modules.dhi15.ui.Dhi15Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xjtusports.app.modules.detail.ui.DetailActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xjtusports.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.xjtusports.app.modules.container.ui.ContainerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.xjtusports.app.modules.dhi14.ui.Dhi14Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xjtusports.app.modules.dhi8.ui.Dhi8Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xjtusports.app.modules.info.ui.InfoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xjtusports.app.modules.dhi12.ui.Dhi12Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xjtusports.app.modules.dhi2.ui.Dhi2Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xjtusports.app.modules.dhi10.ui.Dhi10Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xjtusports.app.modules.dhi6.ui.Dhi6Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xjtusports.app.modules.dhi4.ui.Dhi4Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xjtusports.app.modules.dhi16.ui.Dhi16Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.xjtusports.app.modules.peclasses.ui.PeClassesActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

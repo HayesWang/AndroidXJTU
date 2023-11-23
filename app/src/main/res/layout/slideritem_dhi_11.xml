@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data/>
+    <FrameLayout android:id="@+id/frameStackexaminegrade"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearColumnexaminegrade"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+            <TextView android:id="@+id/txtExamineGrade"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:text="@string/lbl_examine_grade"
+                style="@style/txtRubikitalicsemibold36" tools:text="@string/lbl_examine_grade"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnCheck"
+                android:layout_height="@dimen/_29pxv"
+                android:layout_width="@dimen/_99pxh"
+                android:paddingBottom="@dimen/_5pxv"
+                android:paddingEnd="@dimen/_23pxh"
+                android:paddingStart="@dimen/_25pxh"
+                android:paddingTop="@dimen/_5pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_check"
+                android:textAllCaps="false"
+                style="@style/btnSolidRoundedOutline" tools:text="@string/lbl_check"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imageOne"
+            android:layout_gravity="end"
+            android:layout_height="@dimen/_183pxh"
+            android:layout_width="@dimen/_183pxh"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_1_183x183}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_1_183x183"/>
+    </FrameLayout>
+</layout>

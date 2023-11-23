@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="containerVM" type="com.xjtusports.app.modules.container.data.viewmodel.ContainerVM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearStackwelcome"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/fragmentContainer"
+            android:layout_height="match_parent"
+            android:layout_weight="1" android:layout_width="match_parent"/>
+        <FrameLayout android:gravity="bottom|start"
+            android:id="@+id/frameTabbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" style="@style/groupStylegray_500cornerRadius">
+            <LinearLayout android:id="@+id/linearRowvectorOne"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:id="@+id/linearHome"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal" style="@style/groupStyleindigo_A402cornerRadius">
+                    <ImageView android:id="@+id/imageVectorOne"
+                        android:layout_gravity="center"
+                        android:layout_height="@dimen/_22pxh"
+                        android:layout_width="@dimen/_25pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_vector_white_a700"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_vector_white_a700"/>
+                    <TextView android:ellipsize="end"
+                        android:gravity="center_horizontal"
+                        android:id="@+id/txtHome"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{containerVM.containerModel.txtHome}"
+                        style="@style/txtRubikromanmedium20" tools:text="@string/lbl_home"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageExploreOne"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_width="@dimen/_24pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_explore}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_explore"/>
+                <ImageView android:id="@+id/imageInfo"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_width="@dimen/_24pxh"
+                    android:scaleType="centerCrop" circular="@{true}"
+                    imageRes="@{@drawable/img_info}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_info"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>
